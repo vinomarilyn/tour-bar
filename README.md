@@ -6,4 +6,4 @@
 - Página web de la empresa Bar Tour BA
 
 ### **Link de la pagina:**
-- [Bar Tour BA](https: -> (link) -> (Vista del sitio)
+- [Bar Tour BA](https://vinomarilyn.github.io/tour-bar/ -> (link) -> (Vista del sitio)
