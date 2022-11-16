@@ -14,7 +14,7 @@ body {
 }
 
 a {
-  color: #1bbd36;
+  color: #371B58;
   text-decoration: none;
 }
 
@@ -42,7 +42,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #1bbd36;
+  background: #371B58;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -78,7 +78,7 @@ h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
-  background: #fff;
+  background: #111;
   transition: all 0.5s;
   z-index: 997;
   padding: 15px 0;
@@ -96,11 +96,11 @@ h6 {
 }
 
 #header .logo a {
-  color: #111;
+  color: #FFF;
 }
 
 #header .logo a span {
-  color: #1bbd36;
+  color: #FFB200; /* COLOR PRINCIPAL */
 }
 
 #header .logo img {
@@ -260,7 +260,7 @@ h6 {
 * Mobile Navigation 
 */
 .mobile-nav-toggle {
-  color: #111;
+  color: #FFF;
   font-size: 28px;
   cursor: pointer;
   display: none;
@@ -405,7 +405,7 @@ h6 {
   background: rgba(4, 4, 4, 0.7);
   padding: 20px;
   color: #fff;
-  border-top: 5px solid #1bbd36;
+  border-top: 5px solid #FFB200;
 }
 
 #hero .carousel-content h2 {
@@ -794,7 +794,7 @@ section {
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
   color: #fff;
-  background: #1bbd36;
+  background: #FFB200;
 }
 
 .portfolio #portfolio-flters li:last-child {
