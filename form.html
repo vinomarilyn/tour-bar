@@ -10,7 +10,9 @@
   <meta content="" name="keywords">
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
+  
+  <!-- icon -->
+  <script src="https://kit.fontawesome.com/eb9156ef8e.js" crossorigin="anonymous"></script>
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
@@ -20,7 +22,8 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
+   <!-- javascript -->
+   <script src="assets/js/form.js" defer></script>
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
@@ -117,28 +120,44 @@
                 <div class="col-md-6 form-group">
                   <input type="date"  min="2022-11-11" max="2022-12-12"name="name" class="form-control" id="name" placeholder="Dia:" required>
                 </div>
-                <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Cantidad de personas:" required>
+
+                <div class="addNumber border col-md-6 form-group form-control">
+                  <div><h3>Cantidad de personas:</h3></div>
+                  <div class="addNumber_cont">
+                    <button id="disabledBtn"
+                    onclick="addValueFunction(this)"
+                    value="decrease">
+                    <i class="fa-solid fa-user-minus"></i> 
+                    </button>
+                    <div class="value_cont">
+                      <h3 id="amount" value="">0</h3>
+                    </div>
+                    <button onclick="addValueFunction(this)"
+                    value="increase">
+                    <i class="fa-solid fa-user-plus"></i>
+                    </button>
+                  </div>
+                  
                 </div>
                 
-                <div class="border col-md-6 form-group">
+                <div class="paquetes border col-md-6 form-group form-control">
                   <div><h3>Selecciona un paquete:</h3></div>
                   
                   <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                    <label class="form-check-label" for="inlineCheckbox1">Full</label>
+                    <input class="form-check-input form-control" type="checkbox" id="inlineCheckbox1" value="option1">
+                    <label class="form-check-label " for="inlineCheckbox1">Full</label>
                   </div>
                   <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                    <input class="form-check-input form-control" type="checkbox" id="inlineCheckbox2" value="option2">
                     <label class="form-check-label" for="inlineCheckbox2">Plus</label>
                   </div>
                   <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                    <input class="form-check-input form-control" type="checkbox" id="inlineCheckbox3" value="option3">
                     <label class="form-check-label" for="inlineCheckbox3">Básico</label>
                   </div>
                 </div>
                 </div>
-                <div class="mt-5 text-center"><button type="submit">ENVIAR</button></div>
+                <div class="mt-5 text-center"><button type="submit">RESERVAR</button></div>
               </div>
              
               
