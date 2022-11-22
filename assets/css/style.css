@@ -90,6 +90,12 @@ h6 {
   margin: 1rem;
   color: #111;
 }
+.box2{
+  display: none;
+}
+.box3{
+  display: none;
+}
 /* .value_cont{
   width: 50%;
 }
