@@ -133,23 +133,23 @@
           
           <div class="col-lg-10">
             
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form id="formContact" action="forms/contact.php" method="post" role="form" class="php-email-form">
               <h3 class="text-center">CONSULTA:</h3>
               <div class="row">
                 <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Nombre:" required>
+                  <input type="text" name="name" class="form-control" id="nombre" placeholder="Nombre:" required>
                 </div>
                 <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Email:" required>
+                  <input type="email" class="form-control" name="email" id="emailC" placeholder="Email:" required>
                 </div>
               </div>
               <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Asunto:" required>
+                <input type="text" class="form-control" name="subject" id="subjectC" placeholder="Asunto:" required>
               </div>
               <div class="form-group mt-3">
                 <textarea class="form-control" name="message" rows="5" placeholder="Mensaje:" required></textarea>
               </div>
-              <div class="my-3">
+              <div id="respuestaC" class="my-3">
                 <div class="loading">Loading</div>
                 <div class="error-message"></div>
                 <div class="sent-message">Tu mensaje se envio, ¡Gracias!</div>
@@ -157,13 +157,15 @@
               <div class="text-center"><button type="submit">ENVIAR</button></div>
             </form>
           </div>
-
         </div>
-
-      </div>
+        </div>
     </section><!-- End Contact Section -->
-
+    <section>
+      <div class="col-md-6 form-group" id="respuestaC"></div>
+    </section>
   </main><!-- End #main -->
+  
+
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
@@ -235,6 +237,8 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <script src="assets/js/contact.js" defer></script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
