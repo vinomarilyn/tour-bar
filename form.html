@@ -105,37 +105,41 @@
           
           <div class="col-lg-10">
             
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form id="formReserver" action="forms/contact.php" method="post" role="form" class="php-email-form">
               <h3 class="text-center">RESERVA:</h3>
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Nombre:" required>
                 </div>
                 <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Apellidos:" required>
+                  <input type="text" name="name" class="form-control" id="apellido" placeholder="Apellidos:" required>
+                </div>
+                <div class="col-md-6 form-group">
+                  <input type="number" class="form-control" name="" id="celular" placeholder="Celular:">
                 </div>
                 <div class="col-md-6 form-group mt-3 mt-md-0">
                   <input type="email" class="form-control" name="email" id="email" placeholder="Email:" required>
                 </div>
                 <div class="col-md-6 form-group">
-                  <input type="date"  min="2022-11-11" max="2022-12-12"name="name" class="form-control" id="name" placeholder="Dia:" required>
+                  <input type="date"  min="2022-11-11" max="2022-12-12"name="fecha" class="form-control" id="date" placeholder="Dia:" required>
                 </div>
 
-                <div class="addNumber border col-md-6 form-group form-control">
-                  <div><h3>Cantidad de personas:</h3></div>
+                <div class="d-flex justify-content-start addNumber border col-md-6 form-group form-control">
+                  <div class="addNumberGeneral"><h3>Cantidad de personas:</h3></div>
                   <div class="addNumber_cont">
-                    <button id="disabledBtn"
+                    <!-- <button id="disabledBtn"
                     onclick="addValueFunction(this)"
                     value="decrease">
                     <i class="fa-solid fa-user-minus"></i> 
-                    </button>
+                    </button> -->
                     <div class="value_cont">
-                      <h3 id="amount" value="">0</h3>
+                     <input type="number" name="" id="numero">
+                      <!-- <h3 id="amount" value="">0</h3> -->
                     </div>
-                    <button onclick="addValueFunction(this)"
+                    <!-- <button onclick="addValueFunction(this)"
                     value="increase">
                     <i class="fa-solid fa-user-plus"></i>
-                    </button>
+                    </button> -->
                   </div>
                   
                 </div>
@@ -159,7 +163,9 @@
                 </div>
                 <div class="mt-5 text-center"><button type="submit">RESERVAR</button></div>
               </div>
-             
+              <div id="respuesta" class=" col-lg-10 border col-md-6 form-group form-control">
+
+              </div>
               
             </form>
           </div>
@@ -168,6 +174,9 @@
 
       </div>
     </section><!-- End Contact Section -->
+    <section class="contact">
+
+    </section>
 
   </main><!-- End #main -->
 

@@ -69,6 +69,7 @@ h6 {
   border: solid red;
   display: flex;
   flex-direction: row;
+  width: 100%;
 }
 .addNumber div h3{
   font-family: "Roboto", sans-serif;
@@ -78,7 +79,7 @@ h6 {
   color: #111;
 }
 .addNumber_cont{
-  width: 30%;
+  /* width: 30%; */
   display: flex;
   flex-direction: row;
 }
@@ -89,12 +90,38 @@ h6 {
   margin: 1rem;
   color: #111;
 }
+/* .value_cont{
+  width: 50%;
+}
+.value_cont input{
+  width: 100%;
+}
+.addNumberGeneral{
+   width: 80%;
+} */
 /*--------------------------------------------------------------
 # Disable AOS delay on mobile
 --------------------------------------------------------------*/
 @media screen and (max-width: 768px) {
   [data-aos-delay] {
     transition-delay: 0 !important;
+  }
+
+  .value_cont{
+   width: 100%;
+  }
+  .value_cont input{
+   width: 100%;
+  }
+  .addNumber{
+    width: 100%;
+  }
+
+  .addNumberGeneral{
+    width: 70%;
+  }
+  .addNumber_cont{
+    width: 30%;
   }
 }
 
