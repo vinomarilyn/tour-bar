@@ -1,4 +1,4 @@
-const paqueteBasico = document.querySelector("#paqueteBasico")
+/* const paqueteBasico = document.querySelector("#paqueteBasico")
 const paquetePlus = document.querySelector("#paquetePlus")
 const paqueteFull = document.querySelector("#paqueteFull")
 const descripcionBasico = document.querySelector("#descripcionBasico")
@@ -21,4 +21,4 @@ function opcion2(){
     descripcionBasico.style.display="none"
 }
 
-
+ */
