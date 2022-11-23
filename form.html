@@ -70,7 +70,7 @@
       <div class="header-social-links d-flex">
         <a href="#" class="twitter"><i class="bu bi-twitter"></i></a>
         <a href="#" class="facebook"><i class="bu bi-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bu bi-instagram"></i></a>
+        <a href="https://www.instagram.com/bartourba/" class="instagram"><i class="bu bi-instagram"></i></a>
         <a href="#" class="linkedin"><i class="bu bi-linkedin"></i></i></a>
       </div>
 
@@ -84,10 +84,10 @@
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Contacto</h2>
+          <h2>Reserva</h2>
           <ol>
             <li><a href="index.html">Inicio</a></li>
-            <li>Contacto</li>
+            <li>Reserva</li>
           </ol>
         </div>
 
@@ -105,41 +105,41 @@
           
           <div class="col-lg-10">
             
-            <form id="formReserva" action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form id="formReserva" action="forms/contact.php" method="post" role="form" class="php-email-form" >
               <h3 class="text-center">RESERVA:</h3>
               <div class="row">
                 <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Nombre:" required>
+                  <input type="text" name="name" class="form-control" 
+                  id="name" placeholder="Nombre:" required minlength="3" maxlength="15">
                 </div>
                 <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="apellido" placeholder="Apellidos:" required>
+                  <input type="text" name="name" class="form-control" 
+                  id="apellido" placeholder="Apellidos:" required minlength="3" maxlength="15">
                 </div>
                 <div class="col-md-6 form-group">
-                  <input type="number" class="form-control" name="" id="celular" placeholder="Celular:">
+                  <input type="number" class="form-control" name="" 
+                  id="celular" placeholder="Celular:">
                 </div>
                 <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Email:" required>
+                  <input type="email" class="form-control" name="email" 
+                  id="email" placeholder="Email:" 
+                  required>
+                  <span name="email" class="text-danger mt3 mt-md-0 d-none" id="alertEmail">Texto de error</span>
                 </div>
                 <div class="col-md-6 form-group">
-                  <input type="date"  min="2022-11-11" max="2022-12-12"name="fecha" class="form-control" id="date" placeholder="Dia:" required>
+                  <input type="date"  min="2022-11-11" max="2022-12-12"name="fecha" 
+                  class="form-control" id="date" placeholder="Dia:" required>
                 </div>
 
                 <div class="d-flex justify-content-start addNumber border col-md-6 form-group form-control">
                   <div class="addNumberGeneral"><h3>Cantidad de personas:</h3></div>
                   <div class="addNumber_cont">
-                    <!-- <button id="disabledBtn"
-                    onclick="addValueFunction(this)"
-                    value="decrease">
-                    <i class="fa-solid fa-user-minus"></i> 
-                    </button> -->
+                    
                     <div class="value_cont">
-                     <input type="number" name="" id="numero">
-                      <!-- <h3 id="amount" value="">0</h3> -->
+                     <input type="number" name="" id="numero" min="0" max="50">
+        
                     </div>
-                    <!-- <button onclick="addValueFunction(this)"
-                    value="increase">
-                    <i class="fa-solid fa-user-plus"></i>
-                    </button> -->
+    
                   </div>
                   
                 </div>
@@ -148,26 +148,29 @@
                   <div><h3>Selecciona un paquete:</h3></div>
                   
                   <div class="form-check form-check-inline">
-                    <input class="form-check-input form-control" type="checkbox" id="inlineCheckbox1" value="option1">
+                    <input class="form-check-input form-control" type="checkbox" 
+                    id="inlineCheckbox1" value="option1">
                     <label class="form-check-label " for="inlineCheckbox1">Full</label>
                   </div>
                   <div class="form-check form-check-inline">
-                    <input class="form-check-input form-control" type="checkbox" id="inlineCheckbox2" value="option2">
+                    <input class="form-check-input form-control" type="checkbox" 
+                    id="inlineCheckbox2" value="option2">
                     <label class="form-check-label" for="inlineCheckbox2">Plus</label>
                   </div>
                   <div class="form-check form-check-inline">
-                    <input class="form-check-input form-control" type="checkbox" id="inlineCheckbox3" value="option3">
+                    <input class="form-check-input form-control" type="checkbox" 
+                    id="inlineCheckbox3" value="option3">
                     <label class="form-check-label" for="inlineCheckbox3">Básico</label>
                   </div>
                 </div>
                 </div>
                 <div class="mt-5 text-center"><button type="submit">RESERVAR</button></div>
-              </div>
-              <div id="respuesta" class=" col-lg-10 border col-md-6 form-group form-control">
-
-              </div>
-            
+              </div> 
             </form>
+
+            <div id="respuesta" class="alert alert-success col-md-6 border col-lg-10 d-none">
+              
+            </div>
           </div>
 
         </div>
@@ -228,7 +231,7 @@
       <div class="social-links text-center text-md-right pt-3 pt-md-0">
         <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
         <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="https://www.instagram.com/bartourba/" class="instagram"><i class="bx bxl-instagram"></i></a>
         <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
         <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
       </div>
