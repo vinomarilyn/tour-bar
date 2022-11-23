@@ -25,20 +25,18 @@ const mensajeExito = () =>{
 formularioReserva.addEventListener("submit", (e)=> {
     e.preventDefault();
     respuesta.classList.add('d-none');
-    let valid = false;
     let precio = 0;
 
-    if (paquete1){ 
-        valid = true
+    if (paquete1 == true){ 
         precio = precio + (29000 * contador)
+        paquete2 = false
+        paquete3 = false
      } 
     
-    if (paquete2){
-        valid = true
+    if (paquete2 == true){
         precio =precio +(19000*contador)
          }
-    if (paquete3){
-        valid = true
+    if (paquete3 == true){
         precio = precio +(15000*contador)
          }
 
