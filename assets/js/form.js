@@ -1,14 +1,13 @@
-/* const regExp =   */
-const nombre = document.querySelector("#name").value
-const apellido = document.querySelector("#apellido").value
-const email = document.querySelector("#email").value
-const emailErrorMsg = document.querySelector("#email")
-const celular = document.querySelector("#celular").value
-const fecha = document.querySelector("#date").value
+const nombre = document.querySelector("#name")
+const apellido = document.querySelector("#apellido")
+const email = document.querySelector("#email")
+//const emailErrorMsg = document.querySelector("#email")
+const celular = document.querySelector("#celular")
+const fecha = document.querySelector("#date")
 const contador = Number(document.querySelector("#numero").value)
-const paquete1 = document.querySelector("#inlineCheckbox1").checked
-const paquete2 = document.querySelector("#inlineCheckbox2").checked
-const paquete3 = document.querySelector("#inlineCheckbox3").checked
+const paquete1 = document.querySelector("#inlineCheckbox1")
+const paquete2 = document.querySelector("#inlineCheckbox2")
+const paquete3 = document.querySelector("#inlineCheckbox3")
 
 
 const formularioReserva = document.querySelector("#formReserva")
@@ -27,17 +26,24 @@ formularioReserva.addEventListener("submit", (e)=> {
     respuesta.classList.add('d-none');
     let precio = 0;
     let paqueteGeneral = " ";
+   nombre = nombre.value;
+   apellido = apellido.value;
+   email = email.value;
+   celular = celular.value;
+   fecha = fecha.value;
+  contador = contador;
 
-    if (paquete1 == true){ 
+
+    if (paquete1.checked == true){ 
         precio = precio + (29000 * contador)
         paqueteGeneral = "Full";
      } 
     
-    if (paquete2 == true){
+    if (paquete2.checked == true){
         precio =precio +(19000*contador)
         paqueteGeneral = "Plus";
          }
-    if (paquete3 == true){
+    if (paquete3.checked == true){
         precio = precio +(15000*contador)
         paqueteGeneral = "Básico";
          }
@@ -48,6 +54,3 @@ formularioReserva.addEventListener("submit", (e)=> {
     Precio final: $ ${precio}.
     Nos vemos ${nombre}, para vivir una experiencia inolvidable`
 })
-
-
-
