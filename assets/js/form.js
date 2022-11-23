@@ -26,21 +26,25 @@ formularioReserva.addEventListener("submit", (e)=> {
     e.preventDefault();
     respuesta.classList.add('d-none');
     let precio = 0;
+    let paqueteGeneral = " ";
 
     if (paquete1 == true){ 
         precio = precio + (29000 * contador)
+        paqueteGeneral = "Full";
      } 
     
     if (paquete2 == true){
         precio =precio +(19000*contador)
+        paqueteGeneral = "Plus";
          }
     if (paquete3 == true){
         precio = precio +(15000*contador)
+        paqueteGeneral = "Básico";
          }
 
     mensajeExito()
     
-    respuesta.textContent = `Gracias! ${nombre} reservaste el dia ${fecha},  ${contador} paquetes, 
+    respuesta.textContent = `Gracias! ${nombre} reservaste el dia ${fecha},  ${contador} paquetes ${paqueteGeneral}, 
     Precio final: $ ${precio}.
     Nos vemos ${nombre}, para vivir una experiencia inolvidable`
 })

@@ -103,7 +103,7 @@
 
         <div class="row">
 
-          <div class="col-lg-3 col-md-6">
+          <div class="col-lg-3 col-md-6" id="paqueteBasico" onclick="opcion1()">
             <div class="box featured">
               <h3>Pack Básico</h3>
               <h4><sup>$</sup>15.000</h4>
@@ -122,7 +122,7 @@
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6 mt-4 mt-md-0">
+          <div class="col-lg-3 col-md-6 mt-4 mt-md-0" id="paquetePlus" onclick="opcion2()">
             <div class="box featured">
               <h3>Pack Plus</h3>
               <h4><sup>$</sup>19.000</h4>
@@ -141,7 +141,7 @@
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6 mt-4 mt-lg-0">
+          <div class="col-lg-3 col-md-6 mt-4 mt-lg-0" id="paqueteFull" onclick="opcion3()">
             <div class="box featured">
               <h3>Pack Full Experience</h3>
               <h4><sup>$</sup>29.000</h4>
@@ -161,7 +161,7 @@
 
           </div>
 
-          <div class="col-lg-3 col-md-6">
+          <div class="col-lg-3 col-md-6" id="generalDescripcion">
             <div class="box">
               <h1>Itinerarios</h1>
               <!-- <h4><sup>$</sup>15.000</h4> -->
@@ -176,7 +176,7 @@
           </div>
           
           <!-- cajas -->
-          <div class="col-lg-3 col-md-6 box2">
+          <div class="col-lg-3 col-md-6 box2" id="descripcionBasico">
             <div class="box">
               <h1>Itinerarios</h1>
               <!-- <h4><sup>$</sup>15.000</h4> -->
@@ -190,7 +190,7 @@
 
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 box3">
+          <div class="col-lg-3 col-md-6 box3" id="descripcionFull">
             <div class="box">
               <h1>Itinerario</h1>
               <!-- <h4><sup>$</sup>15.000</h4> -->
@@ -336,6 +336,7 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/js/paquetes.js" defer></script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
