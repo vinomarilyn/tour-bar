@@ -29,8 +29,6 @@ formularioReserva.addEventListener("submit", (e)=> {
 
     if (paquete1 == true){ 
         precio = precio + (29000 * contador)
-        paquete2 = false
-        paquete3 = false
      } 
     
     if (paquete2 == true){
