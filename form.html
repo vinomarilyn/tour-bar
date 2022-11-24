@@ -123,7 +123,7 @@
                   <input type="email" class="form-control" name="email" 
                   id="email" placeholder="Email:" 
                   required>
-                  <span name="email" class="text-danger mt3 mt-md-0 d-none" id="alertEmail">Texto de error</span>
+                  
                 </div>
                 <div class="col-md-6 form-group">
                   <input type="date"  min="2022-11-11" max="2022-12-12"name="fecha" 
@@ -146,22 +146,23 @@
                 <div class="paquetes border col-md-6 form-group form-control">
                   <div><h3>Selecciona un paquete:</h3></div>
                   
-                  <div class="form-check form-check-inline " id="checkboxEstilosRegistro">
+                  <div class="form-check form-check-inline " id="checkboxEstilosRegistro" >
                     <input class="form-check-input form-control" type="checkbox" 
-                    id="inlineCheckbox1" value="option1">
+                    id="inlineCheckbox1" value="option1" onclick="opcion1()" >
                     <label class="form-check-label " for="inlineCheckbox1">Full</label>
                   </div>
                   <div class="form-check form-check-inline" id="checkboxEstilosRegistro">
                     <input class="form-check-input form-control " type="checkbox" 
-                    id="inlineCheckbox2" value="option2">
+                    id="inlineCheckbox2" value="option2" onclick="opcion2()">
                     <label class="form-check-label" for="inlineCheckbox2">Plus</label>
                   </div>
                   <div class="form-check form-check-inline" id="checkboxEstilosRegistro">
                     <input class="form-check-input form-control " type="checkbox" 
-                    id="inlineCheckbox3" value="option3">
+                    id="inlineCheckbox3" value="option3" onclick="opcion3()">
                     <label class="form-check-label" for="inlineCheckbox3">Básico</label>
                   </div>
                 </div>
+                <span name="email" class="alert alert-success mt3 mt-md-0 d-none" id="alertContador"></span>
 
                 <div class="form-check m-4 d-flex " id="checkboxEstilosRegistro">
                   <input class="form-check-input form-control " type="checkbox" value="" id="flexCheckDefault" required>

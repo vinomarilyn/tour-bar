@@ -12,7 +12,53 @@ const respuesta = document.getElementById("respuesta");
 const mensajeExito = () =>{
     respuesta.classList.remove('d-none')
 }
+const alertContadorOk = () =>{
+    alertContador.classList.remove('d-none')
+}
 /* crear el evento */
+const alertContador = document.getElementById("alertContador")
+function opcion1(){
+    const contador = Number(document.querySelector("#numero").value)
+    const paqueteFull = document.querySelector("#inlineCheckbox1")
+
+    let paqueteGeneral = " "
+    if(paqueteFull.checked == true){
+        paqueteGeneral = "Full"
+    }
+
+    let precio = 0;
+    precio = precio + (29000 * contador);
+   alertContadorOk()
+   alertContador.textContent = `Para ${contador} personas,el paquete ${paqueteGeneral} tendra un precio final de: ${precio} `
+}
+function opcion2(){
+    const contador = Number(document.querySelector("#numero").value)
+    const paquetePlus = document.querySelector("#inlineCheckbox2")
+    let paqueteGeneral = " "
+    if(paquetePlus.checked == true){
+        paqueteGeneral = "Plus"
+    }
+   
+    let precio = 0;
+    precio = precio + (19000 * contador);
+   alertContadorOk()
+   alertContador.textContent = `Para ${contador} personas, el paquete ${paqueteGeneral} tendra un precio final de: ${precio} `
+}
+function opcion3(){
+    const contador = Number(document.querySelector("#numero").value)
+    const paqueteBasi = document.querySelector("#inlineCheckbox3")
+    let paqueteGeneral = " "
+    if(paqueteBasi.checked == true){
+        paqueteGeneral = "Básico"
+    }
+
+    let precio = 0;
+    precio = precio + (15000 * contador);
+   alertContadorOk()
+   alertContador.textContent = `Para ${contador} personas, el paquete ${paqueteGeneral} tendra un precio final de: ${precio} `
+}
+
+
 formularioReserva.addEventListener("submit", (e)=> {
 
     e.preventDefault();
