@@ -95,6 +95,28 @@ h6 {
 }
 .box3{
   display: none;
+}/* letra del formulario de reserva terminos */
+.letraFormularioTermino{
+  font-size: 0.8rem;
+  color: #111;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+.letraFormularioTermino a{
+  color: #111;
+}
+/* #checkboxEstilosRegistro{
+
+} */
+#checkboxEstilosRegistro label{
+  margin: 0px 0px 0px 10px;
+/*   display: flex;
+  justify-self: flex-start; */
+
+}
+#checkboxEstilosRegistro input{
+  height: 20px;
+  width: 10px;
 }
 /* .value_cont{
   width: 50%;
